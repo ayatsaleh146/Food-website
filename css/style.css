@@ -112,7 +112,7 @@ section .main {
   position: relative;
   left: 5%;
   top: 60px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .main .main-text .btn:hover {
@@ -142,6 +142,137 @@ section .main {
   animation: animate 5s linear infinite;
 }
 
+.about {
+  width: 100%;
+  height: 100vh;
+  padding: 10px 0 0 0;
+  background-image: url(image/about_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.about .about-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.about .about-main .about-image img {
+  width: 750px;
+}
+
+.about .about-main .about-text  h1 {
+  font-size: 45;
+  font-weight: 900;
+  position: relative;
+  bottom: 40px;
+}
+
+.about .about-main .about-text h1 span {
+  color: #facc22;
+  font-weight: 900;
+
+  margin-right: 15px;
+}
+
+.about .about-main .about-text h3 {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  bottom: 10px;
+}
+
+.about .about-main .about-text p {
+  width: 650px;
+  text-align: justify;
+  line-height: 23px;
+  margin-top: 20px;
+}
+
+.about .about_services {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about .about_services .s_1 {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  background: #ececec;
+  padding: 10px;
+  border: 2px solid #facc22;
+  cursor: pointer;
+}
+
+.about .about_services .s_1 i {
+  font-size: 20px;
+  color: black;
+  margin: 5px 10px 5px 5px;
+  transition: 0.3s;
+}
+
+.about .about_services .s_1 i:hover {
+  color: #facc22;
+}
+
+.about .about_services .s_1 a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.about .about_btn i {
+  font-size: 15px;
+  margin-right: 8px;
+}
+
+.about .about_btn {
+  position: relative;
+  top: 35px;
+  padding: 10px 20px;
+  border: 2px solid #facc22;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.about .about_btn:hover {
+  color: white;
+}
+
+.about .about_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #facc22;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.about .about_btn:hover::before {
+  width: 100%;
+  bottom: 0;
+  top: unset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes animate {
   0% {
     transform: scale(1.1);
@@ -153,5 +284,7 @@ section .main {
     transform: scale(1.1);
   }
 }
+
+
 
 
