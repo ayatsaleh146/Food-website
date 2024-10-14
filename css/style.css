@@ -100,8 +100,8 @@ section .main {
   position: relative;
   left: 5%;
   top: 10px
-  line-height: 23px;
   text-align: justify;
+  line-height: 23px;
 }
 
 .main .main-text .btn {
@@ -141,7 +141,7 @@ section .main {
   width: 650px;
   animation: animate 5s linear infinite;
 }
-
+/* About Section */
 .about {
   width: 100%;
   height: 100vh;
@@ -259,6 +259,136 @@ section .main {
   bottom: 0;
   top: unset;
 }
+
+/* Menu Section */
+.menu {
+  width: 100%;
+  height: 100vh;
+  padding: 75px 0;
+}
+
+.menu h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  font-weight: 900;
+  color:black;
+}
+
+.menu h1 span {
+  color: #facc22;
+  font-weight: 300;
+  margin-left: 15px;
+}
+
+.menu .menu-box {
+  width: 95%;
+  margin: 45px auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px 10px;
+}
+
+.menu .menu-box .menu-card .menu-img {
+  margin: 0 auto;
+  width: 420px;
+  height: 300px;
+  margin-bottom: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu .menu-box .menu-card .menu-img img {
+  width: 420px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.menu .menu-box .menu-card {
+  background-image: url(image/menu_card_bg.png); 
+  background-size: cover;
+  background-position: center;
+  width: 450px;
+  height: 575px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu .menu-text h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.menu .menu-text p {
+  line-height: 21px;
+  margin-bottom: 15px;
+  margin: 0 auto;
+  width: 400px;
+}
+
+.menu .menu-text .menu-icon {
+  color: #facc22;
+  margin: 8px 0;
+}
+
+.menu .menu-text .price {
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.menu .menu-text  .menu_btn {
+  text-decoration: none;
+  color: black;
+  border: 2px solid #facc22;
+  padding: 10px 20px;
+  position: relative;
+  top: 30px;
+  transition: 0.5s;
+}
+
+.menu .menu-text  .menu_btn:hover {
+  color: white;
+}
+
+.menu .menu-text  .menu_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #facc22;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.menu .menu-text  .menu_btn:hover::before {
+  width: 100%;
+  bottom: 0;
+  top: unset;
+}
+
+.menu .menu-text  .menu_btn i {
+  margin-right: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
